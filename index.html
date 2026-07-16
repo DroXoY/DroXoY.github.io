@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Michael Christopher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Portofolio</a>
+            <div class="nav-links">
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Hero Section with Photo -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hello, I'm Michael Christopher</h1>
+                <p>An Information Systems undergraduate student who's currently focusing on web and mobile development.
+                </p>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+            <div class="hero-image-container">
+                <img src="IMG_4250.jpg" alt="Profile Picture">
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <p style="margin-bottom: 25px; color: var(--text-secondary);">Click on the project cards below to view the
+                application demo or screenshots.</p>
+
+            <div class="grid">
+
+                <!-- Food Corner Project (VIDEO) -->
+                <div class="card project-card" onclick="openLightbox('food-corner')">
+                    <h3 class="card-title">Food Corner Web App</h3>
+                    <span class="card-date">Web Application</span>
+                    <p class="card-desc">A dynamic platform for recipe discovery and daily meal planning with
+                        nutritional tracking. Features "What's In My Fridge" to suggest recipes based on available
+                        ingredients via Spoonacular API integration.</p>
+                    <div class="tags">
+                        <span class="tag">Python (Flask)</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+                <!-- Smart To-Do List Project (IMAGES) -->
+                <div class="card project-card" onclick="openLightbox('todo-list')">
+                    <h3 class="card-title">Smart To-Do List</h3>
+                    <span class="card-date">Mobile Application</span>
+                    <p class="card-desc">A feature-rich task manager equipped with a real-time statistics dashboard,
+                        calendar mapping, and dynamic sorting (CRUD). Incorporates a smart alert system with real-time
+                        push notifications and visual warnings for overdue tasks.</p>
+                    <div class="tags">
+                        <span class="tag">Android Java</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </div>
+
+                <!-- Sales & Purchasing Project (IMAGES) -->
+                <div class="card project-card" onclick="openLightbox('sales-system')">
+                    <h3 class="card-title">Sales & Purchasing System</h3>
+                    <span class="card-date">Web Application</span>
+                    <p class="card-desc">A web-based platform designed to facilitate, manage, and record sales
+                        transactions and purchasing operations efficiently.</p>
+                    <div class="tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">JQuery</span>
+                        <span class="tag">Bootstrap5</span>
+                    </div>
+                </div>
+
+                <!-- Digital Invitation Project (IMAGES) -->
+                <div class="card project-card" onclick="openLightbox('digital-invitation')">
+                    <h3 class="card-title">Digital Invitation</h3>
+                    <span class="card-date">Web Application</span>
+                    <p class="card-desc">A beautiful and interactive digital invitation web application for a 60th
+                        Wedding Anniversary. Features include background music, elegant animations, and a guestbook
+                        using Supabase.</p>
+                    <div class="tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Supabase</span>
+                    </div>
+                </div>
+
+                <!-- Kantin Self-Order App (IMAGES) -->
+                <div class="card project-card" onclick="openLightbox('canteen-app')">
+                    <h3 class="card-title">KantinMika Self-Order App</h3>
+                    <span class="card-date">Mobile Application</span>
+                    <p class="card-desc">An Android mobile application for a self-ordering system at a canteen. Includes
+                        a built-in camera feature for seamless scanning and quick transactions.</p>
+                    <div class="tags">
+                        <span class="tag">Android Java</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">SQLite</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Experience & Education Section -->
+        <section id="experience">
+            <h2 class="section-title">Experience & Education</h2>
+
+            <div class="list-item">
+                <div class="list-header">
+                    <h3 class="card-title" style="margin:0;">Bachelor of Information Systems - Universitas Dinamika</h3>
+                    <span class="card-date" style="margin:0;">2024 - Present</span>
+                </div>
+                <p class="card-desc" style="margin-top:10px;">Currently in my 4th semester, focusing on web and mobile
+                    development.</p>
+            </div>
+
+            <div class="list-item">
+                <div class="list-header">
+                    <h3 class="card-title" style="margin:0;">Sound & Lighting Operator</h3>
+                    <span class="card-date" style="margin:0;">2022 - Present</span>
+                </div>
+                <p class="card-desc" style="margin-top:10px;">Managed weekly audiovisual technical infrastructure,
+                    programmed lighting systems for major events, and handled real-time troubleshooting.</p>
+            </div>
+
+            <div class="list-item">
+                <div class="list-header">
+                    <h3 class="card-title" style="margin:0;">Multimedia Coordinator (Prayer Fellowship Club)</h3>
+                    <span class="card-date" style="margin:0;">2025</span>
+                </div>
+                <p class="card-desc" style="margin-top:10px;">Managed live media presentations using ProPresenter and
+                    designed visual assets for the organization.</p>
+            </div>
+
+            <div class="list-item">
+                <div class="list-header">
+                    <h3 class="card-title" style="margin:0;">Treasurer (Badminton Club)</h3>
+                    <span class="card-date" style="margin:0;">2025</span>
+                </div>
+                <p class="card-desc" style="margin-top:10px;">Managed financial cash flow transparency to support
+                    operational activities and training facilities.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="grid">
+
+                <div class="card">
+                    <h3 class="card-title">Programming Languages</h3>
+                    <div class="tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Web & Mobile Development</h3>
+                    <div class="tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">HTML5 / CSS3</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">Android Java</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Database & Analytics</h3>
+                    <div class="tags">
+                        <span class="tag">MySQL</span>
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">Power BI</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h3 class="card-title">Tools & Core Skills</h3>
+                    <div class="tags">
+                        <span class="tag">Figma (UI/UX)</span>
+                        <span class="tag">Git / GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Android Studio</span>
+                        <span class="tag">Microsoft Office</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-box">
+                <h3 style="margin-bottom: 10px; font-size: 1.5rem;">Let's Collaborate</h3>
+                <p style="color: var(--text-secondary);">Interested in working together or discussing internship
+                    opportunities? Feel free to reach out through the links below.</p>
+                <div class="social-links">
+                    <a href="mailto:mike170404@gmail.com">Email</a>
+                    <a href="https://github.com/DroXoY" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/michael-christopher-154060132/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Michael Christopher.</p>
+    </footer>
+
+    <!-- The Lightbox Modal (Hidden by default) -->
+    <div id="lightboxModal" class="modal">
+        <div class="modal-content-wrapper">
+            <span class="close-modal" onclick="closeLightbox()">&times;</span>
+
+            <!-- Tempat untuk Gambar -->
+            <img class="modal-content" id="lightboxImg">
+
+            <!-- Tempat untuk Video YouTube atau Lokal -->
+            <div id="videoWrapper" style="display:none;">
+                <iframe id="lightboxVideo" width="100%" height="100%" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <video id="lightboxLocalVideo" width="100%" height="100%" controls style="display:none;"></video>
+            </div>
+
+            <div class="image-counter" id="imageCounter"></div>
+
+            <!-- Navigation Buttons -->
+            <a class="prev" id="prevBtn" onclick="changeLightboxImage(-1)">&#10094;</a>
+            <a class="next" id="nextBtn" onclick="changeLightboxImage(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <!-- JavaScript for Dynamic Media Lightbox -->
+    <script>
+        // Data Media Proyek: Bisa berisi link Video YouTube ATAU array file Gambar
+        const projectMedia = {
+            'food-corner': {
+                type: 'video',
+                // UBAH TAUTAN INI DENGAN TAUTAN EMBED YOUTUBE MILIKMU
+                // Pastikan formatnya "https://www.youtube.com/embed/ID_VIDEO_KAMU"
+                url: 'https://www.youtube.com/embed/8Z9wS2TDDh8'
+            },
+            'todo-list': {
+                type: 'image',
+                // Sesuaikan dengan nama screenshot aslimu di folder
+                items: ['todo-1.jpg', 'todo-2.jpg', 'todo-3.jpg', 'todo-4.jpg']
+            },
+            'sales-system': {
+                type: 'image',
+                // Sesuaikan dengan nama screenshot aslimu di folder
+                items: ['pweb-1.png', 'pweb-3.png', 'pweb-2.png']
+            },
+            'digital-invitation': {
+                type: 'local_video',
+                url: 'digital-invitation.mp4'
+            },
+            'canteen-app': {
+                type: 'image',
+                // Tambahkan screenshot kantin app di sini
+                items: [
+                    'kantin-1.jpg', 'kantin-2.jpg', 'kantin-3.jpg', 'kantin-4.jpg',
+                    'kantin-5.jpg', 'kantin-6.jpg', 'kantin-7.jpg', 'kantin-8.jpg',
+                    'kantin-9.jpg', 'kantin-10.jpg', 'kantin-11.jpg', 'kantin-12.jpg',
+                    'kantin-13.jpg', 'kantin-14.jpg'
+                ]
+            }
+        };
+
+        let currentProjectKey = '';
+        let currentImageIndex = 0;
+
+        function openLightbox(projectKey) {
+            currentProjectKey = projectKey;
+            currentImageIndex = 0;
+            const media = projectMedia[projectKey];
+
+            if (media) {
+                document.getElementById('lightboxModal').style.display = "block";
+                document.body.style.overflow = "hidden"; // Mencegah scrolling latar belakang
+
+                const imgElement = document.getElementById('lightboxImg');
+                const videoWrapper = document.getElementById('videoWrapper');
+                const videoElement = document.getElementById('lightboxVideo');
+                const localVideoElement = document.getElementById('lightboxLocalVideo');
+                const counterElement = document.getElementById('imageCounter');
+                const prevBtn = document.getElementById('prevBtn');
+                const nextBtn = document.getElementById('nextBtn');
+
+                // Sembunyikan semua media terlebih dahulu
+                imgElement.style.display = 'none';
+                videoWrapper.style.display = 'none';
+                videoElement.style.display = 'none';
+                localVideoElement.style.display = 'none';
+                videoElement.src = '';
+                localVideoElement.src = '';
+
+                // Logika jika media berupa Video YouTube
+                if (media.type === 'video') {
+                    videoWrapper.style.display = 'block';
+                    videoElement.style.display = 'block';
+                    videoElement.src = media.url; // Memasukkan URL video
+                    counterElement.style.display = 'none';
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                }
+                // Logika jika media berupa Video Lokal (MP4)
+                else if (media.type === 'local_video') {
+                    videoWrapper.style.display = 'block';
+                    localVideoElement.style.display = 'block';
+                    localVideoElement.src = media.url;
+                    counterElement.style.display = 'none';
+                    prevBtn.style.display = 'none';
+                    nextBtn.style.display = 'none';
+                }
+                // Logika jika media berupa Kumpulan Gambar
+                else if (media.type === 'image') {
+                    imgElement.style.display = 'block';
+                    counterElement.style.display = 'block';
+
+                    if (media.items.length > 1) {
+                        prevBtn.style.display = 'flex';
+                        nextBtn.style.display = 'flex';
+                    } else {
+                        prevBtn.style.display = 'none';
+                        nextBtn.style.display = 'none';
+                    }
+                    updateLightboxView();
+                }
+            } else {
+                alert("Media coming soon!");
+            }
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxModal').style.display = "none";
+            document.body.style.overflow = "auto";
+
+            // SANGAT PENTING: Menghapus SRC iframe dan video agar berhenti memutar saat ditutup
+            document.getElementById('lightboxVideo').src = '';
+            document.getElementById('lightboxLocalVideo').src = '';
+        }
+
+        function changeLightboxImage(step) {
+            const media = projectMedia[currentProjectKey];
+            if (media.type !== 'image') return;
+
+            currentImageIndex += step;
+            if (currentImageIndex >= media.items.length) {
+                currentImageIndex = 0;
+            }
+            if (currentImageIndex < 0) {
+                currentImageIndex = media.items.length - 1;
+            }
+            updateLightboxView();
+        }
+
+        function updateLightboxView() {
+            const media = projectMedia[currentProjectKey];
+            if (media.type !== 'image') return;
+
+            const imgElement = document.getElementById('lightboxImg');
+            const counterElement = document.getElementById('imageCounter');
+
+            imgElement.src = media.items[currentImageIndex];
+            counterElement.innerHTML = (currentImageIndex + 1) + ' / ' + media.items.length;
+        }
+
+        // Menutup modal jika area gelap di luar gambar/video diklik
+        window.onclick = function (event) {
+            const modal = document.getElementById('lightboxModal');
+            // Cek jika yang diklik adalah background hitam atau wrappernya
+            if (event.target == modal || event.target.className == 'modal-content-wrapper') {
+                closeLightbox();
+            }
+        }
+    </script>
+
+</body>
+
+</html>
